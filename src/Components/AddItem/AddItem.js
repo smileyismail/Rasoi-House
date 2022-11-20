@@ -12,7 +12,7 @@ const AddItem = () => {
   const [category, setCategory] = useState("");
   const [price, setPrice] = useState(0);
   const [description, setDescription] = useState("");
-  const [image, setImage] = useState(null);
+  // const [image, setImage] = useState(null);
 
   const [validFieldIsVisible, setValidFieldIsVisible] = useState(false);
   const [isValid, setIsValid] = useState(true);
@@ -21,7 +21,13 @@ const AddItem = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [imageAsset, setImageAsset] = useState("");
 
-  function uploadImage() {}
+  function uploadImage() {
+    setValidFieldIsVisible();
+    setIsLoading();
+    setIsValid();
+    setImageAsset();
+    setValidityMsg();
+  }
   function deleteImage() {}
 
   function submitHandler(e) {
@@ -67,6 +73,7 @@ const AddItem = () => {
             name="category"
             id="category"
             className="w-full focus:outline-none"
+            value={category}
             onChange={(e) => setCategory(e.target.value)}
           >
             <option value="Others" className="text-xl">
