@@ -9,7 +9,10 @@ const authenticationSlice = createSlice({
   name: "authentication slice",
   initialState: initialAuthenticationSlice,
   reducers: {
-    getLoginData(state, action) {
+    accLogin(state, action) {
+      state.user = action.payload;
+    },
+    accLogout(state, action) {
       state.user = action.payload;
     },
   },

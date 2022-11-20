@@ -8,6 +8,7 @@ module.exports = {
         textColor: "#393E49",
         secondaryColor: "#00ADB5",
         primaryColor: "#EEEEEE",
+        overlay: "rgba(0, 0, 0, 0.6)",
       },
     },
   },
