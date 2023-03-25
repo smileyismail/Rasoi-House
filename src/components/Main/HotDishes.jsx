@@ -18,6 +18,7 @@ const HotDishes = () => {
     Fruits: dummyDishes.filter((fruit) => fruit.type === "fruit"),
     Vegetables: dummyDishes.filter((fruit) => fruit.type === "vegetable"),
     Meals: dummyDishes.filter((fruit) => fruit.type === "meal"),
+    Deserts: dummyDishes.filter((fruit) => fruit.type === "desert"),
   });
   return (
     <section id="hotDishes" className="w-full pt-20 px-6">
