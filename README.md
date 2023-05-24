@@ -8,7 +8,7 @@ A food delivery app that features authentication and a cart system, as well as d
 
 ## Tech Stack
 
-**Client:** React, Tailwind CSS, Framer Motion
+**Client:** React, Redux, Tailwind CSS, Framer Motion, Lottie
 **Server:** Firebase, Fire store
 
 ## Run Locally
