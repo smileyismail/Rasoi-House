@@ -20,7 +20,7 @@ const Drawer = ({ children, isCartOpen, setIsCartOpen }) => {
       </section>
 
       <section
-        className=" w-screen h-full cursor-pointer "
+        className="w-screen h-full cursor-pointer "
         onClick={() => {
           setIsCartOpen(false);
         }}
